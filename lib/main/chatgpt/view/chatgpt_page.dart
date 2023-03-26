@@ -4,7 +4,7 @@ import 'package:chat_app_with_chatgpt/main/chatgpt/bloc/chatgpt_bloc.dart';
 import 'package:chat_app_with_chatgpt/main/chatgpt/bloc/chatgpt_message_type.dart';
 import 'package:chat_app_with_chatgpt/main/chatgpt/bloc/chatgpt_message_view_model.dart';
 import 'package:chat_app_with_chatgpt/main/chatgpt/data/gateway/chatgpt_repository_impl.dart';
-import 'package:chat_app_with_chatgpt/main/chatgpt/data/network/chatgpt_api_service_mixin.dart';
+import 'package:chat_app_with_chatgpt/main/chatgpt/data/network/chatgpt_api_service_impl.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lottie/lottie.dart';

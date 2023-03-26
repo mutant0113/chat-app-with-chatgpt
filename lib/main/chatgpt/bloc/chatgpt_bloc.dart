@@ -45,7 +45,7 @@ class ChatGptBloc extends Bloc<AskQuestionEvent, List<ChatGptMessageViewModel>> 
   static List<ChatGptMessageViewModel> _initialState(DateTimeProvider dateTimeProvider) => [
         ChatGptMessageViewModel.fromBot(
           chatGptResponse: ChatGptResponse(
-            'Hi, I\'m your assistance, please ask me some questions'.trim(),
+            'Hi, I\'m your assistant.\nPlease ask me some questions'.trim(),
           ),
           timestamp: dateTimeProvider.now(),
         )
