@@ -22,22 +22,24 @@ class ChatGptApiServiceImpl implements ChatGptApiService {
           'role': 'system',
           'content': '''
           ${ChatGptConfig.systemRole}
-          After answering the questions, use the prefix "json:" followed by the conversation content to convert it into the defined json format. If there is no value for the fields, please fill it with null. Please try to fill in the json content as much as possible during the conversation, and make sure to reply with the json format.
+          You must reply with 2 things: the "Main content reply" and the pre-defined "JSON".
+          After answering the questions, use the prefix "json:" followed by the conversation content to convert it into the defined json format.
           Here are the definitions of fields:
           1. keyword: Keywords that can be used for Google search during a conversation, including search keywords, recommended brand names, recommended brand models, and so on.
           2. summary: summary of response (less than 50 words)
-          --------
-          Response Format：
+          
+          Here is the response format you must follow:
           Main content reply
           json:
           {
             "keyword": [
               "search keyword",
+              "product keyword",
               "recommended brand name 1",
               "recommended brand model 2",
             ],
             "summary": "summary of response"
-          } 
+          }
           '''
               .trim(),
         },
