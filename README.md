@@ -1,16 +1,21 @@
 # chat_app_with_chatgpt
 
 A chat app sample powered by ChatGPT
+For details, please refer to the [Medium post](https://medium.com/@evanfang/chatting-app-with-chatgpt-3-5-api-using-flutter-2ebcb462e91a)
+
+## Screenshot
+<img src="https://user-images.githubusercontent.com/1586963/227760434-eec3d783-e98d-459e-9192-7e3fcb0dedda.jpg" width="200">
 
 ## Getting Started
+1. Clone the app.
+```
+git clone git@github.com:mutant0113/chat-app-with-chatgpt.git
+```
 
-This project is a starting point for a Flutter application.
+2. Provide your personal API key and system role first in [ChatGptConfig file](https://github.com/mutant0113/chat-app-with-chatgpt/blob/main/lib/core/chatgpt/domain/chatgpt_config.dart).
+<img src="https://user-images.githubusercontent.com/1586963/227760466-7d0e51e4-537c-4576-ac2d-374f9a94dac7.png" width="300">
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. Run the app.
+```
+flutter run lib/main/main.dart
+```
