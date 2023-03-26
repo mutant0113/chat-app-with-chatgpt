@@ -24,6 +24,10 @@ class ChatGptResponseDto {
 
     final jsonString = splittedString.last.trim().replaceAll('`', '').replaceAll('json:', '');
     final jsonMap = json.decode(jsonString) as Map<String, dynamic>;
-    return ChatGptResponse(splittedString.first.trim(), summary: jsonMap['summary'] as String?);
+    return ChatGptResponse(
+      splittedString.first.trim(),
+      summary: jsonMap['summary'] as String?,
+      keywords: (jsonMap['keyword'] as List<dynamic>?)?.map((dynamic keyword) => keyword as String).toList(),
+    );
   }
 }
